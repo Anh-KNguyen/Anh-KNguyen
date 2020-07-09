@@ -53,19 +53,47 @@
             color: darkslategray;
         }
         .sectionTitle{
-            font-size: 25px;
-            font-weight: bold;
-            color:firebrick;
-            margin-bottom: -30px;
+            font-size: 35px;
+            font-weight: lighter;
+            color:lightslategray;
+            margin-bottom: -40px;
+            padding-right: 15px;
         }
         .aboutText{
             padding-left: 15%;
             padding-right: 10%;
             font-size: 20px;
         }
-        .sectionTopMargin{
-            margin-top: 40px;
+        .sectionMargin{
+            margin-top: 65px;
         }
+        .aboutName{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .aboutDate{
+            font-size: 20px;
+            margin-bottom: 80px;
+        }
+        .aboutUni{
+            margin-top: 30px;
+            padding-left: 15%;
+            padding-right: 10%;
+            float: left;
+            padding-right: 40px;
+        }
+        .aboutUniText{
+            font-size: 17px;
+            color:darkgreen;
+        }   
+        .line{
+            display:block;
+            border:none;
+            color:white;
+            height:1px;
+            background:black;
+            background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, from(#000), to(#fff));
+        }  
     </style>
 </head>
 <body>
@@ -111,21 +139,30 @@
 </a>
 </div>
 
+<div class="sectionMargin">
+    <hr class="line">
+</div>
+
 <!-- About Me -->
 <section id="about">
-    <div class="sectionTopMargin">
+    <div class="sectionMargin">
         <div>
             <p class="sectionTitle">About me</p>
         </div>
         <div>
             <p class="aboutText">Besides writing code, I enjoy rock climbing and expanding my culinary skills. My interest in coding and problem solving began in university and I've been enjoying my career since. I am glad to say I am living my dream.</p>
         </div>
-    </div>  
+    </div>
+    <div>
+        <div class="aboutUni">
+            <img height="110" width="70" src="./assets/calpolypomona.gif">
+        </div>
+    </div>
+    <div class="sectionMargin aboutUniText">
+        <p>California State Polytechnic University, Pomona</p>
+        <p>B.S. Computer Science</p>
+    </div>
 </section>
-
-
-
-
 </div>
 </body>
 </html>
