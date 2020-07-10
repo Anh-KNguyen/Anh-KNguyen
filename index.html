@@ -55,42 +55,50 @@
         .item:hover .cardtext {
             color: darkslategray;
         }
-        .sectionTitle{
+        .sectionTitle {
             font-size: 35px;
             font-weight: lighter;
             color:lightslategray;
-            margin-bottom: -40px;
-            padding-left: 40px;
         }
-        .aboutText{
+        .aboutText {
             padding-left: 20%;
             padding-right: 10%;
             font-size: 20px;
         }
-        .sectionMargin{
+        .sectionMargin {
             margin-top: 65px;
         }
-        .aboutUni{
-            margin-top: 30px;
-            padding-left: 20%;
-            padding-right: 10%;
+        .aboutUni {
             float: left;
-            padding-right: 40px;
+            padding-right: 20px;
         }
-        .aboutUniText{
-            font-size: 17px;
+        .aboutUniText {
+            font-size: 14px;
             color:darkgreen;
+            line-height: 15px;
+            padding-top: 10px;
         }   
-        .line{
+        .line {
             display:block;
             border:none;
             height:1px;
             background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, from(darkslategray), to(#fff));
         }
-        .experienceText{
+        .experienceText {
             color:lightslategray;
             font-weight: 250;
-        }  
+        }
+        .bottom-padding {
+            margin-bottom: 30px;
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .text-center-overflow {
+            display: flex;
+            justify-content: center;    
+        }
     </style>
 </head>
 <body>
@@ -102,7 +110,7 @@
 <div class="row text-center justify-content-md-center">
 <div class="col-md-auto">
         <div class="jumbotron">
-            <h1 class="name">Anh Nguyen</h1>
+            <h1 class="name text-center-overflow" >Anh Nguyen</h1>
             <h4 class="subtitle">Software Engineer</h4>
         </div>
 </div>
@@ -110,24 +118,24 @@
 
 <!-- Links -->
 <div class="row text-center justify-content-center">
-<a class="nounderline" href="https://github.com/Anh-KNguyen">
-    <div class="item col-auto">
-            <img height="130" width="160" src="./assets/github.png">
-            <div class="text-center">
-                <h4 class="cardtext">GitHub</h4>
-            </div>
+<a class="nounderline item col-sm-auto" href="https://github.com/Anh-KNguyen">
+    <div>
+        <img height="130" width="160" src="./assets/github.png">
+        <div class="text-center">
+            <h4 class="cardtext">GitHub</h4>
+        </div>
     </div>
 </a>
-<a class="nounderline" href="https://www.linkedin.com/in/anh-nguyen-8b9302118/">
-        <div class="item col-auto">
+<a class="nounderline item col-sm-auto" href="https://www.linkedin.com/in/anh-nguyen-8b9302118/">
+        <div>
             <img height="130" width="130" src="./assets/linkedin.svg">
             <div class="text-center">
                 <h4 class="cardtext">LinkedIn</h4> 
             </div>
         </div>
     </a>
-<a class="nounderline" href="./assets/AnhN_resume.pdf">
-    <div class="item col-auto">
+<a class="nounderline item col-sm-auto" href="./assets/AnhN_resume.pdf">
+    <div>
         <img height="130" width="130" src="./assets/resume.png">
         <div class="text-center">
             <h4 class="cardtext">Resume</h4> 
@@ -142,51 +150,50 @@
 
 <!-- About Me -->
 <section id="about">
-    <div class="sectionMargin">
+    <div class="row justify-content-center">
+        <div class="nounderline item col-sm-3">
+            <p class="sectionTitle text-center-overflow">About me</p>
+        </div>
+    <div class="nounderline item col-sm-9">
+        <p>Besides writing code, I enjoy rock climbing and expanding my culinary skills. My interest in coding and problem solving began in university and I've been enjoying my career since.</p>
         <div>
-            <p class="sectionTitle">About me</p>
-        </div>
-        <div>
-            <p class="aboutText">Besides writing code, I enjoy rock climbing and expanding my culinary skills. My interest in coding and problem solving began in university and I've been enjoying my career since.</p>
-        </div>
-    </div>
-<!--
-    <div>
-        <div class="aboutUni">
-            <img height="110" width="70" src="./assets/calpolypomona.gif">
+            <div class="aboutUni">
+                <img height="55" width="40" src="./assets/calpolypomona.gif">
+            </div>
+            <div class="aboutUniText">
+                <p>California State Polytechnic University, Pomona <br>
+                   B.S. Computer Science</p>
+            </div>
         </div>
     </div>
-    <div class="sectionMargin aboutUniText">
-        <p>California State Polytechnic University, Pomona</p>
-        <p>B.S. Computer Science</p>
-    </div>
--->
+    
 
+    </div>
 </section>
 
 <!-- Expereince -->
 <section id="experience">
     <div class="sectionMargin">
         <div class="row text-center justify-content-center sectionMargin">
-            <div class="item col-4">
+            <div class="item col-sm-4">
                 <img height="100" width="150" src="./assets/intel.png">
                 <div class="text-center">
                     <h4 class="experienceText">Software Developer Intern</h4>
-                    <h4 class="experienceText">2019-2020</h4>
+                    <h4 class="experienceText bottom-padding">2019-2020</h4>
                 </div>
             </div>
-            <div class="item col-4">
+            <div class="item col-sm-4">
                 <img height="100" width="200" src="./assets/printronixautoid.png">
                 <div class="text-center">
                     <h4 class="experienceText">Software Engineering Intern</h4>
-                    <h4 class="experienceText">2018-2018</h4>
+                    <h4 class="experienceText bottom-padding">2018-2018</h4>
                 </div>
             </div>
-            <div class="item col-4">
-                <img height="100" width="80" src="./assets/calpolypomona.gif">
+            <div class="item col-sm-4">
+                <img height="100" width="300" src="./assets/calpolypomona.png">
                 <div class="text-center">
                     <h4 class="experienceText">AI/ML Research Intern</h4>
-                    <h4 class="experienceText">2017-2018</h4>
+                    <h4 class="experienceText bottom-padding">2017-2018</h4>
                 </div>
             </div>
         </div>
