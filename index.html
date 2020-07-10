@@ -32,7 +32,7 @@
             background-color: transparent;
         }
         /* for small screens */
-        @media (max-width: 380px) {
+        @media (max-width: 575px) {
             .name {
                 font-weight: 200;
                 font-size: 4rem;
@@ -46,9 +46,17 @@
                 height: 100px;
                 width: 250px;
             }
+            .about-center {
+                text-align: center;
+            }
+            .aboutUni {
+            float: left;
+            padding-left: 10%;
+            padding-right: 24px;
+        }
         }
         /* for big screens */
-        @media (min-width: 380px) { 
+        @media (min-width: 575px) { 
             .name {
                 font-weight: 200;
                 font-size: 8rem;
@@ -60,8 +68,12 @@
             }
             .longerlogos {
                 height: 100px;
-                width: 250px;
+                width: 260px;
             }
+            .aboutUni {
+            float: left;
+            padding-right: 25px;
+        }
         }
         .subtitle {
             font-weight: 100;
@@ -85,15 +97,8 @@
             font-weight: lighter;
             color:lightslategray;
         }
-        .aboutText {
-            font-size: 20px;
-        }
         .sectionMargin {
             margin-top: 65px;
-        }
-        .aboutUni {
-            float: left;
-            padding-right: 20px;
         }
         .aboutUniText {
             font-size: 14px;
@@ -178,10 +183,10 @@
             <p class="sectionTitle text-center-overflow">About me</p>
         </div>
     <div class="nounderline col-sm-9">
-        <p>Besides writing code, I enjoy rock climbing and expanding my culinary skills. My interest in coding and problem solving began in university and I've been enjoying my career since.</p>
+        <p class="about-center">Besides writing code, I enjoy rock climbing and expanding my culinary skills. My interest in coding and problem solving began in university and I've been enjoying my career since.</p>
         <div style="margin-top: 30px;">
             <div class="aboutUni">
-                <img height="55" width="40" src="./assets/calpolypomona.gif">
+                <img height="55" width="45" src="./assets/calpolypomona.gif">
             </div>
             <div class="aboutUniText">
                 <p>California State Polytechnic University, Pomona <br>
