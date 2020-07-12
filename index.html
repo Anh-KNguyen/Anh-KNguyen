@@ -32,7 +32,7 @@
             background-color: transparent;
         }
         /* for small screens */
-        @media (max-width: 575px) {
+        @media (max-width: 768px) {
             .name {
                 font-weight: 200;
                 font-size: 4rem;
@@ -65,11 +65,21 @@
                 padding-top: 25px;
             }
             .sm-stack-padding {
-                margin-top: 250px;
+                margin-top: 100px;
             }
+            .sm-extra-stack-padding {
+                margin-bottom: 200px;
+            }
+            .stackText {
+                font-size: 20px;
+            }
+            .allign-icons {
+                text-align: center;
+            }
+
         }
         /* for big screens */
-        @media (min-width: 575px) { 
+        @media (min-width: 768px) { 
             .name {
                 font-weight: 200;
                 font-size: 8rem;
@@ -88,17 +98,26 @@
                 width: 270px;
             }
             .aboutUni {
-            float: left;
-            padding-right: 25px;
+                float: left;
+                padding-right: 25px;
             }
             .aboutUniText {
-            font-size: 16px;
-            color:darkgreen;
-            line-height: 17px;
-            padding-top: 25px;
+                font-size: 16px;
+                color:darkgreen;
+                line-height: 17px;
+                padding-top: 25px;
             }
             .stack-padding {
                 margin-top: 50px;
+            }
+            .center-text-stack {
+                margin-top: 60px;
+            }
+            .stackText {
+                font-size: 25px;
+            }
+            .allign-icons {
+                text-align: left;
             }
         }
         .subtitle {
@@ -175,10 +194,8 @@
             margin-bottom: 60px;
         }
         .stackImage {
-            height: 100px;
-            margin: 1% 1% 0 1%;
-            margin-left: 2%;
-            margin-right: 2%;
+            height: 90px;
+            margin: 1% 1%;
         }
     </style>
 </head>
@@ -285,53 +302,55 @@
     <div class="grey-page sectionMargin">
         <div>
             <p class="stackTitle text-center-overflow">My Stack</p>
-            <p class="aboutText padding" style="text-align: center; margin-bottom: 70px;">For my tech stack, I always try to use leading-edge technology and a good mix of classics. I enjoy learning new skills and diving deeper into the intricacies of languages. See a collection of my preferred languages and tools.</p>
+            <p class="stackText padding" style="text-align: center; margin-bottom: 70px;">For my tech stack, I always try to use leading-edge technology and a good mix of classics. I enjoy learning new skills and diving deeper into the intricacies of languages. See a collection of my preferred languages and tools.</p>
         </div>
-        <div class="row">
-            <div class="col-md-5 stack-left">
-                <p class="techStack">Languages</p>
+        <div class="container">
+            <div class="row allign-icons sm-extra-stack-padding">
+                <div class="col-md-3 stack-left">
+                    <p class="techStack center-text-stack">Languages</p>
+                </div>
+                <div class="col-md-9 stack-right">
+                    <img class="stackImage" src="./assets/python.svg"></img>
+                    <img class="stackImage" src="./assets/java.svg"></img>
+                    <img class="stackImage" src="./assets/javascript.svg"></img>
+                    <img class="stackImage" src="./assets/typescript.svg"></img>
+                    <img class="stackImage" src="./assets/htmlcss.png"></img>
+                    <img class="stackImage" src="./assets/nodejs.png"></img>
+                    <img class="stackImage" src="./assets/golang.png"></img>
+                </div>
             </div>
-            <div class="col-md-7 stack-right">
-                <img class="stackImage" src="./assets/python.svg"></img>
-                <img class="stackImage" src="./assets/java.svg"></img>
-                <img class="stackImage" src="./assets/javascript.svg"></img>
-                <img class="stackImage" src="./assets/typescript.svg"></img>
-                <img class="stackImage" src="./assets/htmlcss.png"></img>
-                <img class="stackImage" src="./assets/nodejs.png"></img>
-                <img class="stackImage" src="./assets/golang.png"></img>
+            <div class="row allign-icons sm-stack-padding">
+                <div class="col-md-3 stack-left">
+                    <p class="techStack center-text-stack">Framework & Libraries</p>
+                </div>
+                <div class="col-md-9 stack-right" style="margin-top: 35px;">
+                    <img class="stackImage" src="./assets/react.svg"></img>
+                    <img class="stackImage" src="./assets/bootstrap.svg"></img>
+                    <img class="stackImage" src="./assets/angularjs.png"></img>
+                    <img class="stackImage" src="./assets/express.png"></img>
+                </div>
             </div>
-        </div>
-        <div class="row sm-stack-padding stack-padding">
-            <div class="col-md-5 stack-left">
-                <p class="techStack">Framework & Libraries</p>
+            <div class="row allign-icons sm-stack-padding">
+                <div class="col-md-3 stack-left">
+                    <p class="techStack center-text-stack">Tools & Technologies</p>
+                </div>
+                <div class="col-md-9 stack-right" style="margin-top: 35px;">
+                    <img class="stackImage" src="./assets/mongodb.svg"></img>
+                    <img class="stackImage" src="./assets/postgresql.svg"></img>
+                    <img class="stackImage" src="./assets/mysql.png"></img>
+                    <img class="stackImage" src="./assets/postman.png"></img>
+                    <img class="stackImage" src="./assets/gitlab.svg"></img>
+                </div>
             </div>
-            <div class="col-md-7 stack-right">
-                <img class="stackImage" src="./assets/react.svg"></img>
-                <img class="stackImage" src="./assets/bootstrap.svg"></img>
-                <img class="stackImage" src="./assets/angularjs.png"></img>
-                <img class="stackImage" src="./assets/express.png"></img>
-            </div>
-        </div>
-        <div class="row sectionMargin ">
-            <div class="col-md-5 stack-left">
-                <p class="techStack">Tools & Technologies</p>
-            </div>
-            <div class="col-md-7 stack-right">
-                <img class="stackImage" src="./assets/mongodb.svg"></img>
-                <img class="stackImage" src="./assets/postgresql.svg"></img>
-                <img class="stackImage" src="./assets/mysql.png"></img>
-                <img class="stackImage" src="./assets/postman.png"></img>
-                <img class="stackImage" src="./assets/gitlab.svg"></img>
-            </div>
-        </div>
-        <div class="row sectionMargin">
-            <div class="col-md-5 stack-left">
-                <p class="techStack">Dev. Environment</p>
-            </div>
-            <div class="col-md-7 stack-right">
-                <img class="stackImage" src="./assets/ubuntu.png"></img>
-                <img class="stackImage" src="./assets/docker.png"></img>
-                <img class="stackImage" src="./assets/git.svg"></img>
+            <div class="row allign-icons sm-stack-padding">
+                <div class="col-md-3 stack-left">
+                    <p class="techStack center-text-stack">Dev. Environment</p>
+                </div>
+                <div class="col-md-9 stack-right" style="margin-top: 35px;">
+                    <img class="stackImage" src="./assets/ubuntu.png"></img>
+                    <img class="stackImage" src="./assets/docker.png"></img>
+                    <img class="stackImage" src="./assets/git.svg"></img>
+                </div>
             </div>
         </div>
     </div>
