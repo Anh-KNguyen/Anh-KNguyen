@@ -64,19 +64,20 @@
                 line-height: 17px;
                 padding-top: 25px;
             }
-            .sm-stack-padding {
-                margin-top: 100px;
-            }
-            .sm-extra-stack-padding {
-                margin-bottom: 200px;
-            }
             .stackText {
                 font-size: 20px;
             }
             .allign-icons {
                 text-align: center;
             }
-
+            .stack-padding {
+                margin-top: 100px;
+                margin-bottom: 250px;
+            }
+            .stackImage {
+                height: 84px;
+                margin: 6% 2%;
+            }
         }
         /* for big screens */
         @media (min-width: 768px) { 
@@ -107,17 +108,30 @@
                 line-height: 17px;
                 padding-top: 25px;
             }
-            .stack-padding {
-                margin-top: 50px;
+            .center-ex-text-stack {
+                margin-top: 30px;
             }
             .center-text-stack {
                 margin-top: 60px;
             }
             .stackText {
                 font-size: 25px;
+                margin-left: 15%;
+                margin-right: 15%;
             }
             .allign-icons {
                 text-align: left;
+            }
+            .stack-icon-padding {
+                margin-top: 35px;
+            }
+            .stackImage {
+                height: 90px;
+                margin: 3% 1%;
+            }
+            .stack-padding {
+                margin-top: 5%;
+                margin-bottom: 5%;
             }
         }
         .subtitle {
@@ -192,10 +206,6 @@
         .stack-right {
             height: 100px;
             margin-bottom: 60px;
-        }
-        .stackImage {
-            height: 90px;
-            margin: 1% 1%;
         }
     </style>
 </head>
@@ -305,9 +315,9 @@
             <p class="stackText padding" style="text-align: center; margin-bottom: 70px;">For my tech stack, I always try to use leading-edge technology and a good mix of classics. I enjoy learning new skills and diving deeper into the intricacies of languages. See a collection of my preferred languages and tools.</p>
         </div>
         <div class="container">
-            <div class="row allign-icons sm-extra-stack-padding">
+            <div class="row allign-icons stack-padding">
                 <div class="col-md-3 stack-left">
-                    <p class="techStack center-text-stack">Languages</p>
+                    <p class="techStack center-ex-text-stack">Languages</p>
                 </div>
                 <div class="col-md-9 stack-right">
                     <img class="stackImage" src="./assets/python.svg"></img>
@@ -315,26 +325,26 @@
                     <img class="stackImage" src="./assets/javascript.svg"></img>
                     <img class="stackImage" src="./assets/typescript.svg"></img>
                     <img class="stackImage" src="./assets/htmlcss.png"></img>
-                    <img class="stackImage" src="./assets/nodejs.png"></img>
                     <img class="stackImage" src="./assets/golang.png"></img>
                 </div>
             </div>
-            <div class="row allign-icons sm-stack-padding">
+            <div class="row allign-icons stack-padding">
                 <div class="col-md-3 stack-left">
                     <p class="techStack center-text-stack">Framework & Libraries</p>
                 </div>
-                <div class="col-md-9 stack-right" style="margin-top: 35px;">
+                <div class="col-md-9 stack-right stack-icon-padding">
                     <img class="stackImage" src="./assets/react.svg"></img>
                     <img class="stackImage" src="./assets/bootstrap.svg"></img>
                     <img class="stackImage" src="./assets/angularjs.png"></img>
-                    <img class="stackImage" src="./assets/express.png"></img>
+                    <img class="stackImage" src="./assets/nodejs.png"></img>
+                    <img class="stackImage" src="./assets/express.svg"></img>
                 </div>
             </div>
-            <div class="row allign-icons sm-stack-padding">
+            <div class="row allign-icons stack-padding">
                 <div class="col-md-3 stack-left">
                     <p class="techStack center-text-stack">Tools & Technologies</p>
                 </div>
-                <div class="col-md-9 stack-right" style="margin-top: 35px;">
+                <div class="col-md-9 stack-right stack-icon-padding">
                     <img class="stackImage" src="./assets/mongodb.svg"></img>
                     <img class="stackImage" src="./assets/postgresql.svg"></img>
                     <img class="stackImage" src="./assets/mysql.png"></img>
@@ -342,12 +352,12 @@
                     <img class="stackImage" src="./assets/gitlab.svg"></img>
                 </div>
             </div>
-            <div class="row allign-icons sm-stack-padding">
+            <div class="row allign-icons stack-padding">
                 <div class="col-md-3 stack-left">
                     <p class="techStack center-text-stack">Dev. Environment</p>
                 </div>
-                <div class="col-md-9 stack-right" style="margin-top: 35px;">
-                    <img class="stackImage" src="./assets/ubuntu.png"></img>
+                <div class="col-md-9 stack-right stack-icon-padding">
+                    <img class="stackImage" src="./assets/ubuntu.svg"></img>
                     <img class="stackImage" src="./assets/docker.png"></img>
                     <img class="stackImage" src="./assets/git.svg"></img>
                 </div>
