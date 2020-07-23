@@ -204,6 +204,10 @@
     font-weight: lighter;
     color: slategrey;
 }
+.projectsText {
+    font-size: 20px;
+    color: slategray
+}
 .projectImageDiv {
     text-align: right;
     border-radius: 5px;
