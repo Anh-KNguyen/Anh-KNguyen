@@ -14,200 +14,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <style>
-        .main {
-            margin-top: 3em;
-        }
-        .end {
-            margin-bottom: 5em;
-        }
-        .nounderline {
-            text-decoration: none !important
-        }
-        .item {
-            padding-left: 4em;
-            padding-right: 4em;
-        }
-        .jumbotron {
-            background-color: transparent;
-        }
-        /* for small screens */
-        @media (max-width: 768px) {
-            .name {
-                font-weight: 200;
-                font-size: 4rem;
-                color:lightslategray;
-            }
-            .logos {
-                height: 100px;
-                width: 150px;
-            }
-            .printlogo {
-                height: 100px;
-                width: 220px;
-            }
-            .callogo {
-                height: 100px;
-                width: 230px;
-            }
-            .about-center {
-                text-align: center;
-            }
-            .aboutUni {
-                float: left;
-                padding-left: 10%;
-                padding-right: 24px;
-            }
-            .aboutUniText {
-                font-size: 15px;
-                color:darkgreen;
-                line-height: 17px;
-                padding-top: 25px;
-            }
-            .stackText {
-                font-size: 20px;
-            }
-            .allign-icons {
-                text-align: center;
-            }
-            .stack-padding {
-                margin-top: 45%;
-                margin-bottom: 70%;
-            }
-            .stackImage {
-                height: 85%;
-                margin: 6% 3%;
-            }
-        }
-        /* for big screens */
-        @media (min-width: 768px) { 
-            .name {
-                font-weight: 200;
-                font-size: 8rem;
-                color:lightslategray;
-            }
-            .logos {
-                height: 100px;
-                width: 150px;
-            }
-            .printlogo {
-                height: 100px;
-                width: 240px;
-            }
-            .callogo {
-                height: 100px;
-                width: 270px;
-            }
-            .aboutUni {
-                float: left;
-                padding-right: 25px;
-            }
-            .aboutUniText {
-                font-size: 16px;
-                color:darkgreen;
-                line-height: 17px;
-                padding-top: 25px;
-            }
-            .center-ex-text-stack {
-                margin-top: 30px;
-            }
-            .center-text-stack {
-                margin-top: 60px;
-            }
-            .stackText {
-                font-size: 25px;
-                margin-left: 5%;
-                margin-right: 5%;
-            }
-            .allign-icons {
-                text-align: left;
-            }
-            .stack-icon-padding {
-                margin-top: 35px;
-            }
-            .stackImage {
-                height: 90px;
-                margin: 3% 1%;
-            }
-            .stack-padding {
-                margin-top: 5%;
-                margin-bottom: 5%;
-            }
-        }
-        .subtitle {
-            font-weight: 100;
-            font-style: italic;
-            font-size: 2rem;
-            color:lightslategray;
-        }
-        .cardtext {
-            margin-top: 1rem;
-            color:lightslategray;
-            font-weight: 400;
-        }
-        .cardtext:hover {
-            color: darkslategray;
-        }
-        .item:hover .cardtext {
-            color: darkslategray;
-        }
-        .sectionTitle {
-            font-size: 35px;
-            font-weight: lighter;
-            color:lightslategray;
-        }
-        .aboutText {
-            font-size: 18px;
-        }
-        .sectionMargin {
-            margin-top: 50px;
-        }
-        .line {
-            display:block;
-            border:none;
-            height:1px;
-            background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, from(darkslategray), to(#fff));
-        }
-        .experienceText {
-            color:black;
-            font-weight: 230;
-            padding-top: 10px;
-        }
-        .padding {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        .text-center-overflow {
-            display: flex;
-            justify-content: center;    
-        }
-        .space-around{
-            padding: 50px 50px;
-        }
-        .grey-page{
-            background-color: #212529;
-            color: whitesmoke;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        .stackTitle {
-            font-size: 45px;
-        }
-        .aboutText {
-            font-size: 20px;
-        }
-        .techStack {
-            font-size: 27px;
-            text-align: center;
-        }
-        .stack-left {
-            height: 50px;
-        }
-        .stack-right {
-            height: 100px;
-            margin-bottom: 60px;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 </head>
 <body>
 
@@ -364,9 +172,48 @@
             </div>
         </div>
     </div>
-
-
 </section>
+
+<!-- Portfolio -->
+<section id=portfolio>
+    <div class="portfolioTitle">
+        <p class="projectsTitle" style="margin-top: 100px;">Recent Projects</p>
+        <p class="aboutText" style="text-align: center; margin-bottom: 70px;">Below are some of my favorite projects I have done so far. Click the demo links to take you to a live version of my projects.</p>
+        <div class="row projectRow">
+            <div class="col-6 projectImageDiv">
+                <img class="projectImage" src="./assets/morse.png">
+            </div>
+            <div class="col-md-6 projectText paddingRightCol">
+                <p class="projectTitle">Morse Code</p>
+                <p class="projectDescription">An interactive web app to learn and play morse code. Built entirely in React<i class="em em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i></p>
+                <p class="projectDescription">#React</p>
+                <div>
+                    <a href="https://github.com/Anh-KNguyen/morse" class="projectLink">Code</a> <a href="http://morse.anhknguyen.com" class="projectLink">Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 projectImageDiv">
+                <img class="projectImage" src="./assets/queensboard.png">
+            </div>
+            <div class="col-md-6 projectText paddingRightCol">
+                <p class="projectTitle">Queens Board</p>
+                <p class="projectDescription">Arranges a random permutation of 8 chess queens so that no two queens threaten each other. Implemented with backtracking<i class="em em-crown" aria-role="presentation" aria-label="CROWN"></i> <i class="em em-black_heart" aria-role="presentation" aria-label="BLACK HEART"></i></p>
+                <p class="projectDescription">#JavaScript</p>
+                <div>
+                    <a href="https://github.com/Anh-KNguyen/QueensBoard" class="projectLink">Code</a> <a hef="" class="projectLink">Demo</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+
 
 <div class="end"div>
 
