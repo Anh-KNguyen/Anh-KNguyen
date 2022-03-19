@@ -25,6 +25,14 @@
         height: 100px;
         width: 150px;
     }
+    .workdaylogo {
+        height: 150px;
+        width: 150px;
+    }
+    .uniphorelogo {
+        height: 150px;
+        width: 150px;
+    }
     .printlogo {
         height: 100px;
         width: 220px;
@@ -91,6 +99,14 @@
     }
     .logos {
         height: 100px;
+        width: 150px;
+    }
+    .workdaylogo {
+        height: 150px;
+        width: 150px;
+    }
+    .uniphorelogo {
+        height: 150px;
         width: 150px;
     }
     .printlogo {
